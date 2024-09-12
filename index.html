@@ -10,12 +10,11 @@ p {
   text-align: center;
   font-family: 'Arvo', sans-serif;
   font-size: 20px;
-  font-style: italic;
   letter-spacing: 0.5px;
   padding: 0px;
   margin: 0;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -47,7 +46,7 @@ var x = setInterval(function() {
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " days to go!"
+  document.getElementById("demo").innerHTML = days + "<br>days to go!"
     
   // If the count down is over, write some text 
   if (distance < 0) {
